@@ -9,17 +9,18 @@ function ContactForm() {
         alert("Obrigado por entrar em contato!");
         setNome("");
         setEmail("");
+
     }
 
     return(
         <section id="formulario">
         <h2>Entre em Contato</h2>
-        <form onsubmit={handleSubmit}>
-            <div class="input-container">
+        <form onSubmit={handleSubmit}>
+            <div className="input-container">   
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" value={nome} onChange={(e) => setNome(e.target.value)}/>
             </div>
 
-            <div class="input-container">
+            <div className="input-container">
                 <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value)}/>
             </div>
 
