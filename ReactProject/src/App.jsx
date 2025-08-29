@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import CourseSection from "./components/CoursesSection";
 import NewsSection from "./components/NewsSection";
 import ContactForm from "./components/ContatctForm"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <CourseSection/>
       <NewsSection/>
       <ContactForm/>
+      <Footer/>
     </main>
     
     </>
