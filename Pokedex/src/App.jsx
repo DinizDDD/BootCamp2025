@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import PokemonCard from './components/pokemoncard';
+import PokemonCard from './components/Pokemoncard';
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchPokemons = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=9");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1302");
       const data = await response.json();
 
       const detailedPokemon = await Promise.all(
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <h1>Pokemodex</h1>
+        <h1>Pokedéx</h1>
         <div className="pokemon-grid">
           {pokemons.map(pokemon => (
             <PokemonCard
